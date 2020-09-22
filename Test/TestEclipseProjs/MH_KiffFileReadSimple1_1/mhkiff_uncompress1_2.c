@@ -17,7 +17,7 @@ int read_uncompress_kiffchunk(
 		int uncompressed_size){
 
 	FILE *fp;
-	unsigned char *uncompressbuf;
+	unsigned char *uncompressbuf; // static char unc[10000000]; ??
 	unsigned char *compressedbuf;
 
 	if((fp = fopen(filename, "r")) == NULL){
@@ -45,7 +45,7 @@ int main(){
 
 	ret_val = read_uncompress_kiffchunk(
 			"/Users/rsaito/Desktop/TMPArea/C_114STD_1.kiff",
-			100, 5000, 6000
+			19853425, 1453424, 2574004
 	);
 
 	printf("Hello, world!\n");
