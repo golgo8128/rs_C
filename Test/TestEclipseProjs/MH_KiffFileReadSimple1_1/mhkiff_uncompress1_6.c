@@ -8,6 +8,15 @@
 /* On Mac,
  * gcc -c mhkiff_uncompress1_6.c
  * gcc -L/usr/lib mhkiff_uncompress1_6.o -o mhkiff_uncompress1_6 -lz
+
+In some environment:
+
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -fPIC  -Wall -g -O2  -c mhkiff_uncompress1_6.c -o mhkiff_uncompress1_6.o
+
+Then,
+
+R CMD SHLIB mhkiff_uncompress1_6.c
+
  */
 
 #include <zlib.h>
