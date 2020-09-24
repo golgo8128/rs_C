@@ -18,7 +18,7 @@ Then,
 R CMD SHLIB mhkiff_uncompress1_6.c
 
 
-On Windows,
+On Windows in MINGW64,
 
 R.exe CMD SHLIB mhkiff_uncompress1_6.c -lz
 
