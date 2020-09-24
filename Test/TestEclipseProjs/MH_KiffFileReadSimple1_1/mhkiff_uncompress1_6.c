@@ -94,9 +94,10 @@ int main(){
 	int ret_val;
 	int seek_pos          = 19853425;
 	int compressed_size   = 1453424;
-	int uncompressed_size = 2574004;
-	char *filename = "/Users/rsaito/Desktop/TMP_Area/C_114STD_1.kiff";
-
+	int uncompressed_size = 2574004 * 2;
+	/* char *filename = "/Users/rsaito/Desktop/TMP_Area/C_114STD_1.kiff"; */
+	char *filename = "C:\\Users\\golgo\\Desktop\\TMP_Area\\C_114STD_1.kiff";
+	
 	unsigned char *uncompressbuf; // static char unc[10000000]; ??
 	uncompressbuf = (unsigned char *)malloc(uncompressed_size * sizeof(unsigned char));
 
